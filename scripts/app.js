@@ -368,7 +368,7 @@
 
   if('serviceWorker' in navigator) {
       navigator.serviceWorker
-          .register('/service-worker.js')
+          .register('/first-pwa/service-worker.js', { scope: '/first-pwa/' })
           .then(function() { console.log('Service Worker Registered'); });
   }
 })();
